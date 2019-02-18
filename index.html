@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="js">
+
+<head>
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.4.93/css/materialdesignicons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+  <title>美食烩-食谱详情</title>
+
+
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+
+  <meta name="applicable-device" content="mobile">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="new_assets/食色logo.JPG">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="new_assets/食色logo.JPG">
+  <link rel="apple-touch-icon-precomposed" href="new_assets/食色logo.JPG">
+  <link rel="shortcut icon" href="new_assets/食色logo.JPG">
+
+  <!-- <link href="http://ce-cdn.midea.com/ccs/cookbook/3.6.11/compass/stylesheets/comm.css?v=1f79d10" rel="stylesheet"> -->
+
+
+
+  <link href="./assets_files/midea.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+
+
+
+
+  <div id="site-body">
+
+
+    <v-app>
+      <v-content fluid>
+
+        <v-layout align-center justify-center column fill-height />
+
+        <div class="recipe-full">
+
+          <div class="recipe-cover aspect-ratio aspect-ratio--6x4 cover unveiled "
+            style="background-image: url(./assets_files/20112.jpg?imageView2/1/w/640/h/520/interlace/1/q/90)">
+            <img class="aspect-ratio--object unveiled" src="./assets_files/20112.jpg" width="320" height="260">
+          </div>
+          <div class="wrapper mb0">
+            <header>
+              <div class="name" id="name">
+                <h1 class="plain">干锅香辣鱼块</h1>
+              </div>
+              <div class="cooked">
+                <span>695万人浏览</span>
+                <span>82.2万人收藏</span>
+                <span>1.4万人做过</span>
+              </div>
+            </header>
+
+
+          </div>
+
+          <v-flex>
+            <v-card class="mx-auto" max-width="400">
+              <!-- <v-card-title>
+                  <v-icon large left>
+                    mdi-twitter
+                  </v-icon>
+                  <span>本文作者</span>
+                </v-card-title> -->
+
+              <v-card-text>
+                鱼肉富含优质蛋白，含量是猪肉的两倍，且易被人体吸收，同时富含维生素、矿物质等。干锅香辣是川菜做法，易上火体质需适量。
+              </v-card-text>
+
+              <v-card-actions>
+                <v-list-tile class="grow">
+                  <v-list-tile-avatar>
+                    <v-img class="elevation-6" src="./assets_files/logo.png">
+                    </v-img>
+                  </v-list-tile-avatar>
+
+                  <v-list-tile-content>
+                    <v-list-tile-title>食色君</v-list-tile-title>
+                  </v-list-tile-content>
+                  <v-btn color="primary">关注</v-btn>
+                  <!-- <v-layout align-center justify-end>
+                      <v-icon class="mr-1">mdi-heart</v-icon>
+                      <span class="subheading mr-2">256</span>
+                      <span class="mr-1">·</span>
+                      <v-icon class="mr-1">mdi-share-variant</v-icon>
+                      <span class="subheading">45</span>
+                    </v-layout> -->
+                </v-list-tile>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+
+          <v-flex xs12 md6 my-2 mx-1>
+            <v-chip>
+              <v-avatar>
+                <v-icon>mdi-clock-outline</v-icon>
+              </v-avatar>
+              参考时间: 18分钟
+            </v-chip>
+          </v-flex>
+
+
+          <v-flex xs12 md6 my-2 mx-1>
+            <v-chip>
+              <v-avatar>
+                <v-icon>mdi-pot</v-icon>
+              </v-avatar>
+              适用设备: 烹饪机
+            </v-chip>
+          </v-flex>
+
+          <v-flex xs12 md6 my-2 mx-1>
+            <v-chip>
+              <v-avatar>
+                <v-icon>mdi-carrot</v-icon>
+              </v-avatar>
+              所需食材
+            </v-chip>
+          </v-flex>
+
+
+
+          <v-data-table hide-actions :pagination.sync="pagination" :headers="headers" :items="material"
+            class="elevation-1">
+            <template slot="items" slot-scope="props">
+              <td class="text-xs-left">{{ props.item.name }}</td>
+              <td class="text-xs-left">{{ props.item.quantity }}</td>
+              <td class="text-xs-left">{{ props.item.detail }}</td>
+            </template>
+          </v-data-table>
+          <div class="text-xs-center pt-2">
+            <v-pagination v-model="pagination.page" :length="pages"></v-pagination>
+          </div>
+
+          <v-flex xs12 md6 my-2 mx-1>
+            <v-chip>
+              <v-avatar>
+                <v-icon>mdi-fire</v-icon>
+              </v-avatar>
+              烹饪步骤
+            </v-chip>
+          </v-flex>
+
+
+          <v-card>
+            <v-container fluid grid-list-lg>
+                <v-layout align-center justify-center column fill-height/>
+                <v-flex xs12>
+                  <v-card color="blue-grey darken-2" class="white--text">
+                    <v-img src="./assets_files/1.jpg" height="200px">
+                    </v-img>
+                    <v-card-title primary-title>
+                      <div>
+                        <div class="headline">1.购买如图所示食材。</div>
+                        <span>Listen to your favorite artists and albums whenever and wherever, online and
+                          offline.</span>
+                      </div>
+                    </v-card-title>
+                  </v-card>
+                </v-flex>
+
+                <v-flex xs12>
+                  <v-card>
+                    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px">
+                    </v-img>
+
+                    <v-card-title primary-title>
+                      <div>
+                        <div class="headline">Top western road trips</div>
+                        <span class="grey--text">1,000 miles of wonder</span>
+                      </div>
+                    </v-card-title>
+
+                  </v-card>
+                </v-flex>
+
+              </v-layout>
+            </v-container>
+          </v-card>
+
+
+
+          <v-footer height="55" fixed>
+            <v-layout align-center justify-space-around row fill-height />
+            <v-flex>
+              <v-btn flat color="primary">
+                <v-icon>mdi-tag-heart</v-icon>
+                收藏食谱
+              </v-btn>
+            </v-flex>
+
+            <v-flex>
+              <v-btn flat color="primary">
+                <v-icon>mdi-cloud-upload</v-icon>
+                上传食谱
+              </v-btn>
+            </v-flex>
+            <v-flex>
+              <v-btn color="primary">
+                <v-icon>mdi-chef-hat</v-icon>
+                马上烹饪
+              </v-btn>
+            </v-flex>
+
+            </v-layout>
+
+          </v-footer>
+
+
+
+        </div>
+
+        </v-layout>
+      </v-content>
+    </v-app>
+
+  </div>
+
+
+
+  <header class="fixed-header">
+    <a href="http://iot4.midea.com.cn/downloads/app/index.html?pgfrom=wxcd3" class="flex">
+      <div class="flex flex-1">
+        <div><img class="app-logo" src="new_assets/美居app.JPG"></div>
+        <div class="flex-1">
+          <div class="app-text">美居·美好生活 智慧家居</div>
+          <div><img class="star-icon" src="./assets_files/d2a9e4a9932443e2bf492b0361bceab2_124w_18h.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="app-btn">点击下载</div>
+    </a>
+  </header>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  <script src="index.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

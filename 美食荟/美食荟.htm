@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0192)http://living.midea.com/ccs/cookbook/3.6.11/menu_detail.html?AT=null&menuId=20112&from=default&unWifi=0&now=1550488265000&token=a4685e2fe5214d79a14867e6038ad67c5e28ab0bd3b3cc47c6f7cd713e16d697 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="author" content="CimiDesign">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>美食烩-食谱详情</title>
+    <!--<base href="http://ce-cdn.midea.com/ccs/cookbook/3.6.11/">-->
+
+    <link href="./assets_files/comm.css" rel="stylesheet">
+    <link href="./assets_files/topBar.css" rel="stylesheet">
+    <link href="./assets_files/menu_detail.css" rel="stylesheet">
+    <script src="./assets_files/stats.js" name="MTAH5" sid="500429915" cid="500429920"></script><script type="text/javascript" async="" src="./assets_files/countly.min.js"></script><script src="./assets_files/jweixin-1.2.0.js"></script>
+    <script>
+
+        //some default pre init
+        var Countly = Countly || {};
+        Countly.q = Countly.q || [];
+
+        //provide your app key that you retrieved from Countly dashboard
+        Countly.app_key = '8fbf9cf7e0e076d2feb9bf770a3b8e81795c7e2f';
+
+        //provide your server IP or name. Use try.count.ly for EE trial server.
+        //if you use your own server, make sure you have https enabled if you use
+        //https below.
+        Countly.url = 'https://countly.midea.com';
+
+        //start pushing function calls to queue
+        //track sessions automatically
+        Countly.q.push(['track_sessions']);
+
+        //track sessions automatically
+        Countly.q.push(['track_pageview', location.pathname + location.hash]);
+
+        (function () {
+
+            var cly = document.createElement('script');  //引入countly
+            cly.type = 'text/javascript';
+            cly.async = true;
+            //enter url of script here
+            cly.src = 'js/countly.min.js';
+            cly.onload = function () { Countly.init() };
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(cly, s);
+
+        })();
+
+        function meijuDownload() {
+            location.href = 'http://iot4.midea.com.cn/downloads/app/index.html?pgfrom=wxcd3'
+        }
+
+    </script>
+    <style>
+        #dialog-mask {
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            background: #000;
+            opacity: 0.5;
+            display: none;
+            position: fixed;
+        }
+    </style>
+<meta name="viewport" content="width=640,minimum-scale=0.5859375, user-scalable=no"><script src="./assets_files/wxconfig"></script></head>
+
+<body>
+    <!--美居顶部返回条-->
+    <div id="meiJu_topBar" style="position: fixed;z-index: 1000;">
+        <a href="javascript:commJs.goBack()">
+            <p><img src="./assets_files/return.png">&nbsp;&nbsp;返回</p>
+        </a>
+        <p class="title">美食烩-食谱详情</p>
+    </div>
+    <h1 class="hide">美勺</h1>
+    <div class="g-bd">
+        <div class="g-wrap">
+            <!--关注-->
+            <div class="fixTop" id="fixTop">
+                <span id="classify" class="classify">
+                    <a href="javascript:menu_detail.payAttention(&#39;close&#39;)"><i class="spr-close"></i></a>
+                </span>
+                <!-- <span class="top-logo"><i class="spr-mideaLogo"></i></span> -->
+                <span class="top-text"><p>建议下载获取美居APP，以体验更多</p>
+                    <p>智能家电服务</p></span>
+                <div class="top-download" onclick="meijuDownload()">
+                    <span style="color:#FFFFFF">
+                        点击下载
+                    </span>
+                </div>
+            </div>
+            <div class="m-pic">
+                <!--<img :src="pic" v-if="pic.indexOf('v.qq.com') == -1" style="position:absolute;clip: rect(0px 640px 360px 0px)">-->
+                <img src="./assets_files/20112.jpg">
+                
+            </div>
+            <div class="m-personal" style="width: 100%">
+                <p style="font-family: PingFangSC-Regular;font-size: 32px;color: #202634;">干锅香辣鱼块</p>
+                <div id="j_menu_title">
+                    <span class="scanNum">2092</span>
+                    <span class="colNum">84</span>
+                </div>
+                <div class="wx-Header" style="width: 70px;">
+                    <img style="border-radius: 100%;width: 70px;" src="./assets_files/logo.png">
+                </div>
+                <div class="tab-list" style="overflow: hidden;white-space: nowrap;width: 420px;display: inline-block;margin-left: 30px;vertical-align: middle">
+                    <p style="background: url(img/icon_label.png) no-repeat left center;background-size: 20px;padding-left: 30px;display: inline-block;font-size: 20px;color: #687085;margin-right: 30px;" class="tab-item">全体人群</p>
+                    <p style="background: url(img/icon_label.png) no-repeat left center;background-size: 20px;padding-left: 30px;display: inline-block;font-size: 20px;color: #687085;margin-right: 30px;" class="tab-item">祛寒</p><p style="background: url(img/icon_label.png) no-repeat left center;background-size: 20px;padding-left: 30px;display: inline-block;font-size: 20px;color: #687085;margin-right: 30px;" class="tab-item">祛湿</p>
+                </div>
+                <!-- <p class="nickName" style="font-family: PingFangSC-Light;font-size: 24px;color: #9A9BB3;">美勺君</p> -->
+            </div>
+            <div class="m-intro">
+                <i class="spr-shangyinghao_2" style="margin-left: 26px"></i>
+                <div style="    font-family: PingFangSC-Light;font-size: 24px;">鱼肉富含优质蛋白，含量是猪肉的两倍，且易被人体吸收，同时富含维生素、矿物质等。干锅香辣是川菜做法，易上火体质需适量。</div>
+                <i class="spr-xiayinghao_2" style="margin-right: 26px;float: right"></i>
+            </div>
+            <div class="m-fit">
+                <h2 class="inline clock" style="font-family: PingFangSC-Regular;font-size: 28px;color: #9A9BB3;">参考时间</h2>
+                <p style="font-family: PingFangSC-Light;font-size: 24px;color: #202634;">
+                    <span>18分钟</span>
+                    
+                </p>
+            </div>
+            <div class="m-fit">
+                <h2 class="inline" style="font-family: PingFangSC-Regular;font-size: 28px;color: #9A9BB3;"><i class="spr-shiyongshebei_2" style="margin-bottom: 13px;"></i>适用设备</h2>
+                <p style="font-family: PingFangSC-Light;font-size: 24px;color: #202634;">烹饪机</p>
+            </div>
+            <div class="m-material m-multi-list">
+                <div class="m-tab" id="m_tab">
+                    <h2 style="font-family: PingFangSC-Regular;font-size: 28px;color: #9A9BB3;"><i class="spr-suoxushicai_2" tyle="margin-bottom: 13px;"></i>所需食材</h2>
+                    <div class="tab-bd">
+                        <div class="tab-panel" style="display: block">
+                            <ul class="m-ingrediens clearfix">
+                                <li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">草鱼</div>
+                                    <span class="weight">1&nbsp;条
+                                    <span>(500&nbsp;克 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">青椒</div>
+                                    <span class="weight">1&nbsp;根
+                                    <span>(50&nbsp;克 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">红椒</div>
+                                    <span class="weight">1&nbsp;根
+                                    <span>(10&nbsp;克 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">油</div>
+                                    <span class="weight">4&nbsp;汤匙
+                                    <span>(36&nbsp;毫升 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">生抽</div>
+                                    <span class="weight">2&nbsp;茶匙
+                                    <span>(11&nbsp;毫升 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">老抽</div>
+                                    <span class="weight">2&nbsp;茶匙
+                                    <span>(2&nbsp;毫升 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">料酒</div>
+                                    <span class="weight">2&nbsp;茶匙
+                                    <span>(9&nbsp;毫升 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">盐</div>
+                                    <span>少许</span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">白砂糖</div>
+                                    <span class="weight">1&nbsp;茶匙
+                                    <span>(3&nbsp;克 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">鸡精</div>
+                                    <span>少许</span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">白胡椒粉</div>
+                                    <span class="weight">1&nbsp;克
+                                    
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">香辣酱</div>
+                                    <span class="weight">1&nbsp;汤匙
+                                    <span>(15&nbsp;克 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">姜片</div>
+                                    <span class="weight">5&nbsp;片
+                                    <span>(5&nbsp;克 )</span>
+                                    </span>
+                                    
+                                </li><li>
+                                    <div style="width: 300px;float: left;padding-left: 55px">蒜瓣</div>
+                                    <span class="weight">5&nbsp;瓣
+                                    <span>(25&nbsp;克 )</span>
+                                    </span>
+                                    
+                                </li><li style="width: 100%;">
+                                    <div style="width: 300px;float: left;padding-left: 55px">水量</div>
+                                    <span class="weight">200&nbsp;毫升
+                                    
+                                    </span>
+                                    
+                                </li>
+                            </ul>
+                            <a href="javascript:menu_detail.nutritionalView()">
+                                <div class="btn_s">查看营养视图</div>
+                            </a>
+                        </div>
+                        <div class="tab-panel">
+                            <ul class="clearfix">
+                                <li>能量: 722.49kcal</li><li>蛋白质: 50.71g</li><li>脂肪: 51.70g</li><li>碳水化合物: 14.64g</li><li>膳食纤维: 2.06g</li><li>胆固醇: 249.40mg</li><li>维生素A: 82.45μg</li><li>胡萝卜素: 301.60μg</li><li>维生素B1: 0.15mg</li><li>维生素B2: 0.42mg</li><li>维生素B3: 8.94mg</li><li>维生素B6: 0.44mg</li><li>维生素C: 32.64mg</li><li>维生素E: 11.32mg</li><li>维生素K: 7.15μg</li><li>叶酸: 17.30μg</li><li>钙: 183.94mg</li><li>磷: 659.14mg</li><li>磷: 1161.32mg</li><li>钠: 2022.75mg</li><li>镁: 148.14mg</li><li>铁: 6.55mg</li><li>锌: 3.47mg</li><li>硒: 20.57μg</li><li>铜: 0.32mg</li><li>锰: 0.58mg</li><li>碘: 23.62μg</li><li>嘌呤: 410.93mol</li>
+                            </ul>
+                            <a href="javascript:menu_detail.nutritionalView()" class="btn-more">查看完整营养信息</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-step">
+                <div style="margin-left: 40px;font-family: PingFangSC-Regular;font-size: 28px;color: #9A9BB3;">
+                    <div class="cook-step">烹饪步骤</div>
+                </div>
+                <ul>
+                    <li>
+                        
+                        <b>1</b>
+                        <p>购买如图所示食材。</p>
+                    </li><li>
+                        <div class="img-wrap">
+                            <img onerror="commJs.imgError(this)" src="./assets_files/2.jpg">
+                        </div>
+                        <b>2</b>
+                        <p>青椒和红椒切圈；草鱼洗净、切块，放入料酒1大勺，姜10片，大葱1段腌20分钟。</p>
+                    </li><li>
+                        <div class="img-wrap">
+                            <img onerror="commJs.imgError(this)" src="./assets_files/3.jpg">
+                        </div>
+                        <b>3</b>
+                        <p>将调料全部加入锅中搅拌均匀，启动烹饪。</p>
+                    </li><li>
+                        <div class="img-wrap">
+                            <img onerror="commJs.imgError(this)" src="./assets_files/4.jpg">
+                        </div>
+                        <b>4</b>
+                        <p>提示完成后，搅拌均匀出锅。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="m-comments">
+                <a class="andriod">我要留言&nbsp;&nbsp;<i class="spr-comment" style="margin-bottom: 6px"></i></a>
+                <h2 style=" padding: 70px 0 15px 0;">
+                    <span class="comm-title">用户评论</span>
+                    <span class="comm-num">共6条</span>
+                </h2>
+                <ul class="news" id="news">
+                    <li>
+                        <img src="./assets_files/132">
+                        <span class="name">linuxer程🏀</span>
+                        <p class="content">这道菜因该不适合孕妇</p>
+                        <span class="time">2017/5/25</span>
+                        
+                    </li><li>
+                        <img src="./assets_files/132">
+                        <span class="name">linuxer程🏀</span>
+                        <p class="content">这道菜不适合孕妇，太辣了</p>
+                        <span class="time">2017/5/25</span>
+                        
+                    </li><li>
+                        <img src="./assets_files/132(1)">
+                        <span class="name">周宗旭 Benny</span>
+                        <p class="content">挺好吃，确实方便，比较便捷</p>
+                        <span class="time">2017/6/9</span>
+                        
+                    </li><li>
+                        <img src="./assets_files/132(2)">
+                        <span class="name">杨应彬 Ben Yang</span>
+                        <p class="content">觉得在外面吃亏大了，看起来很简单啊</p>
+                        <span class="time">2017/6/13</span>
+                        
+                    </li><li>
+                        <img src="./assets_files/132(3)">
+                        <span class="name">孟德龙</span>
+                        <p class="content">心服口服~~诶,不说了,跨界当道,我也去厨房写诗了(๑‾ ꇴ ‾๑)</p>
+                        <span class="time">2017/6/20</span>
+                        
+                    </li><li>
+                        <img src="./assets_files/0">
+                        <span class="name">🚬Dan🐾</span>
+                        <p class="content">这鱼要先用别的锅炸一下吗？
+</p>
+                        <span class="time">2017/8/10</span>
+                        <ul class="reply-list">
+                            <li>
+                                <!-- <img src="http://ce-cdn.midea.com/ccs/cookbook/3.6.11/img/logo.png" style=""> -->
+                                <span class="reply-name">管理员<span class="time">2017/8/10</span></span>
+                                <p class="content">你好，参考食谱详情操作即可哦~</p>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="g-btn" id="g-btn" style="display: block !important">
+                <a href="javascript:menu_detail.postCollectionAdd();" class="fl collection">
+                    <!-- <i class="spr-btn-fav"></i><i class="spr-btn-fav-w"></i>收藏食谱-->
+                    <i class="spr-unCollected"></i><i class="spr-btn-fav-w"></i>收藏食谱
+                </a>
+                
+                <a href="javascript:menu_detail.sendDeviceAction();" class="fl startWork">
+                    <!--<i class="spr-btn-send"></i><i class="spr-btn-send-w"></i>-->
+                    <span>马上烹饪</span>
+                    
+                </a>
+            </div>
+            <div id="spinner" style="position: fixed;display:none;bottom: 180px;left: 25%;font-weight: 900;background-color: rgba(80, 80, 90, 0.22);padding-top: 20px;padding-bottom: 20px;padding-left: 100px;padding-right: 100px;border-radius: 15px;">
+                正在加载...
+            </div>
+        </div>
+    </div>
+    <!-- 设备列表弹窗 -->
+    <div class="g-pop" id="j_pop_sel_device">
+        <div class="m-hd">
+            <div class="spr-send"></div>
+            <p>请选择发送设备的操作</p>
+        </div>
+        <ul id="j_device_list" v-cloak="">
+            <li v-for="item in items" :class="{ &#39;selected&#39;: $index === 0 }" data-index="{{$index}}">
+                <span></span>
+                <label>{{ item.name }}</label>
+            </li>
+        </ul>
+        <div class="m-btn">
+            <a href="javascript:menu_detail.selectDevice(menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].virtualId);" v-if="flag == 1">下一步</a>
+            <a href="javascript:menu_detail.selectDevice(menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].applianceId);" v-else="">下一步</a>
+            <a href="javascript:commJs.Dialog.close()">取消</a>
+        </div>
+    </div>
+    <!--询问用户是否停止当前工作 弹窗-->
+    <div class="s-load" id="S_loading" style="display: none;">
+        <div class="ss-loadtext">
+            <i class="iconfont"></i>
+            <a href="javascript:menu_detail.payAttention(&#39;attention_close&#39;)">
+                <div id="S_loadtxt" style="position: absolute;right: 30px;top: 20px;"><i class="spr-close"></i></div>
+            </a>
+            <div><img src="./assets_files/erweima.png"></div>
+        </div>
+    </div>
+    <div class="g-pop-dialog " id="showShareTips" style="display: none;">
+        <h2>提示</h2>
+        <div class="m-con">
+            <p>分享页暂不支持烹饪，可进入我的家电页操作</p>
+        </div>
+        <div class="m-btn">
+            <a href="javascript:commJs.Dialog.close()">好的</a>
+        </div>
+    </div>
+    <div class="g-pop-dialog " id="j_pop_dialog" style="display: none;">
+        <h2>提示</h2>
+        <div class="m-con">
+            <p>设备已经在工作了，要停止当前工作才能继续，是否要停止当前工作？</p>
+        </div>
+        <div class="m-btn">
+            <a href="javascript:commJs.Dialog.close();">暂不需要</a>
+            <a href="javascript:menu_detail.postCancelWork(menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].deviceId,menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].virtualId);commJs.Dialog.close()" v-if="flag == 1">好的</a>
+            <!--<a href="javascript:menu_detail.postCancelWork(menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].applianceId);commJs.Dialog.close()" v-else>好的</a>-->
+        </div>
+    </div>
+    <div class="s-load" id="J_loading" style="display: none">
+        <div class="cc-loadtext">
+            <i class="iconfont"></i>
+            <span id="J_loadtxt" style="color: white">请稍后..</span>
+        </div>
+    </div>
+    <div id="dialog-mask">
+
+    </div>
+    <script src="./assets_files/wxconfig"></script>
+    <script src="./assets_files/vue.min.js"></script>
+    <script src="./assets_files/comm.js"></script>
+    <script src="./assets_files/data.js"></script>
+    <script src="./assets_files/store.min.js"></script>
+    <script>
+        var menu_detail = {
+            init: function () {
+                commJs.userInformation(this.successCallback);
+                if (!commJs.userInfo.deviceType) {
+                    commJs.getDeviceListFromMenuId();
+                }
+                if (!window.localStorage.getItem('tag')) {
+                    document.getElementById('fixTop').style.display = 'block';
+                }
+                commJs.Loading();
+
+            },
+            successCallback: function () {
+                commJs.tab({ elmId: 'm_tab' });
+                menu_detail.vueObj = new Vue({
+                    el: '.g-bd',
+                    data: {
+                        AT: commJs.getUrlParam('AT'),
+                        flag: 1,
+                        // historyLen: history.length,
+                        diy: menuStyle.diy,
+                        recipeType: commJs.getUrlParam('unWifi') ? commJs.getUrlParam('unWifi') : menuStyle.wifi,
+                        createTime: '',
+                        localTime: '',
+                        id: '',
+                        pic: '',
+                        title: '',
+                        intro: '',
+                        fit: '',
+                        menuIngrediens: [],
+                        nutritions: {},
+                        cookHour: '',
+                        cookMinute: '',
+                        stepDisciptions: [],
+                        collection: '',
+                        consumer: [],
+                        deviceSelected: 0,
+                        deviceList: [{ deviceId: commJs.userInfo.deviceId }],
+                        applianceCategory: 0,
+                        materialNum: 1,
+                        deviceType: '',
+                        modelNo: '',
+                        collectCounts: '',
+                        meiju: (commJs.getUrlParam('flag') == commJs.environment.mSmartMain || commJs.getUrlParam('flag') == commJs.environment.mSmartControl),
+                        meijuMain: (commJs.getUrlParam('flag') == commJs.environment.mSmartMain),
+                        android: /android/.test(navigator.userAgent.toLowerCase()),
+                        index: 1,
+                        comments: [],
+                        totalcomment: 0,
+                        pageNo: 0,
+                        totalPageCount: 0,
+                        likeCounts: "",
+                        hideCook: false,
+                        collecting: false,
+                        effectTypeList: effectTypeList,
+                        peopleTypeList: peopleTypeList,
+                        effectType: [],
+                        peopleType: [],
+                        workingDevice: 0
+                    },
+                    methods: {
+                        goComment: function () {
+                            MtaH5.clickStat('menu_comment');
+                            commJs.ajax({
+                                urlType: 10,
+                                type: 'POST',
+                                url: '/v1/crm/reg/check',
+                                data: {
+                                    openId: commJs.userInfo.openId,
+                                    userId: commJs.userInfo.userId
+                                },
+                                success: function (data) {
+                                    if (data.isReg != 0) {
+                                        window.location.replace("https://passport.midea.com/v3/login_code?channelFrom=MEISHIHUI&system=meishao&openId=" + data.openId + "&redirect=" + encodeURIComponent(location.href));
+                                    } else {
+                                        commJs.jumpUrl('http://living.midea.com/ccs/cookbook/3.6.11/' + 'makeComments.html?AT=' + commJs.getUrlParam('AT') + '&menuId=' + menu_detail.vueObj.id);
+                                    }
+                                },
+                                error: function (data) {
+
+                                }
+                            });
+                        },
+                        countlyPush(recommendName) {
+                            Countly.add_event({ 'key': recommendName, 'count': 1 });
+                        }
+                    },
+                    watch: {
+                        'menuIngrediens': function () {
+                            //食材搭配的列表，单数的时候最后一个li宽度100%
+                            var materialList = document.getElementsByClassName('m-material')[0].getElementsByTagName('ul');
+                            for (var i = 0; i < materialList.length; i++) {
+                                var li = materialList[i].getElementsByTagName('li');
+                                if (li.length % 2 != 0) {
+                                    li[li.length - 1].style.width = 100 + '%';
+                                }
+                            }
+                        }
+                    }
+                });
+                menu_detail.getComments(1);
+                //menu_detail.judgeWetherPossessDeviceList();
+                menu_detail.vueObj.flag = (commJs.getUrlParam('flag') == commJs.environment.mSmartMain || commJs.getUrlParam('flag') == commJs.environment.mSmartControl) ? 0 : 1;
+
+                commJs.collectEnterPage(commJs.userInfo.userId, commJs.userInfo.openId);
+                if (menu_detail.vueObj.recipeType == menuStyle.wifi) {
+                    menu_detail.getMenuDetail();
+                } else {
+                    menu_detail.getUserMenuDetail();
+                }
+
+                menu_detail.counter();
+                window.addEventListener('scroll', function () {
+                    var pageHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight);
+                    var viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0;
+                    var scrollHeight = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                    if (pageHeight - viewportHeight - scrollHeight < 5 && menu_detail.vueObj.pageNo < menu_detail.vueObj.totalPageCount) {
+                        document.getElementById('spinner').style.display = 'block';
+                        setTimeout(function () {
+                            document.getElementById('spinner').style.display = 'none';
+                            menu_detail.getComments(++menu_detail.vueObj.index)
+                        }, 1000);
+                    }
+                });
+
+            },
+            counter: function () {
+                var count = menu_detail.vueObj.materialNum;
+                var that = document.getElementsByClassName('m-counter')[0];
+            },
+            vueObj: null,
+            //美食汇2.0-获取菜谱详情接口
+            getMenuDetail: function () {
+                commJs.ajax({
+                    urlType: 0,
+                    type: 'GET',
+                    url: '/menu/detail/' + commJs.getUrlParam('menuId') + '/' + commJs.userInfo.userId + '/' + commJs.userInfo.openId + '/' + commJs.getUrlParam('from'),
+                    data: {},
+                    success: function (data) {
+                        //将英文营养视图处理成中文
+                        var chnNutritions = [];
+                        for (var key in data.nutritions) {
+                            for (var i = 0; i < dataNutritions.length; i++) {
+                                var chnObj = dataNutritions[i];
+                                var chnValue = '';
+                                for (var chnKey in chnObj) {
+                                    chnValue = chnObj[chnKey];
+                                }
+                                var unitObj = dataNutritionsUnit[i];
+                                var unitValue = '';
+                                for (var unitKey in unitObj) {
+                                    unitValue = unitObj[unitKey];
+                                }
+
+                                if (key == chnKey) {
+                                    chnNutritions[i] = { num: data.nutritions[key].toFixed(2) + unitValue, name: chnValue };
+                                }
+                            }
+                        }
+
+                        var stepList = [];
+                        if (data.menu) {
+                            menu_detail.vueObj.likeCounts = data.menu.likeCounts;
+                            menu_detail.vueObj.localTime = data.menu.createTime;
+                            menu_detail.vueObj.collectCounts = data.menu.collectCounts;
+                            menu_detail.vueObj.id = data.menu.id;
+                            menu_detail.vueObj.pic = 'http://ce-cdn.midea.com/ccs/cookbook/' + data.menu.mainPicture + mainPicParams;
+                            menu_detail.vueObj.title = data.menu.menuName;
+                            menu_detail.vueObj.intro = data.menu.description;
+                            menu_detail.vueObj.cookHour = parseInt(parseInt(data.menu.cookTime) / 60);
+                            menu_detail.vueObj.cookMinute = parseInt(data.menu.cookTime) % 60;
+                            menu_detail.vueObj.applianceCategory = applianceList[data.menu.applianceCategory]; //菜谱类别
+                            menu_detail.vueObj.menuIngrediens = data.menuIngrediens;
+                            stepList = data.stepDisciptions;
+                            var timestamp3 = data.menu.createTime;
+                            var newDate = new Date();
+                            newDate.setTime(timestamp3);
+                            menu_detail.vueObj.createTime = newDate.toLocaleString();
+                        } else {
+                            menu_detail.vueObj.id = data.menuTopic.id;
+                            menu_detail.vueObj.pic = 'http://ce-cdn.midea.com/ccs/cookbook/' + data.menuTopic.mainPicture + mainPicParams;
+                            menu_detail.vueObj.collectCounts = data.menu.collectCounts;
+                            menu_detail.vueObj.title = data.menuTopic.menuName;
+                            menu_detail.vueObj.intro = data.menuTopic.description;
+                            menu_detail.vueObj.cookHour = parseInt(data.menu.cookTime) / 60;
+                            menu_detail.vueObj.cookMinute = parseInt(data.menu.cookTime) % 60;
+                            menu_detail.vueObj.applianceCategory = applianceList[data.menu.applianceCategory]; //菜谱类别
+                            menu_detail.vueObj.menuIngrediens = data.menuIngredienses;
+                            stepList = data.stepDisciptionList;
+                        }
+                        if (data.menuClassification) {
+                            menu_detail.vueObj.effectType = data.menuClassification.effectType.split(",");
+                            menu_detail.vueObj.effectType.shift();
+                            menu_detail.vueObj.effectType.pop();
+                            menu_detail.vueObj.effectType = menu_detail.vueObj.effectType.slice(0, 2);
+                            menu_detail.vueObj.peopleType = data.menuClassification.peopleType.split(",");
+                            menu_detail.vueObj.peopleType.shift();
+                            menu_detail.vueObj.peopleType.pop();
+                            menu_detail.vueObj.peopleType = menu_detail.vueObj.peopleType.slice(0, 1);
+                        }
+                        //将食材计量单位处理成中文
+                        for (var i = 0; i < menu_detail.vueObj.menuIngrediens.length; i++) {
+                            var obj = menu_detail.vueObj.menuIngrediens[i];
+                            obj.unitWeight = obj.weight; //每份的重量
+                            obj.unitAcurateWeight = obj.accurateWeight;
+                            if (parseFloat(obj.weight) == 0 && parseFloat(obj.accurateWeight) == 0) {
+                                obj.unit = '';
+                            } else {
+                                if (parseFloat(obj.weight) == 0) {
+                                    obj.weight = obj.accurateWeight
+                                }
+                                obj.unit = obj.generalUnit ? dataMaterialUnit[obj.generalUnit - 1] : dataMaterialUnit[obj.accurateUnit - 1];
+                                obj.accurateUnit = dataMaterialUnit[obj.accurateUnit - 1];
+                                // if (obj.weight == obj.accurateWeight) {
+                                //     obj.unit = obj.accurateUnit
+                                // }
+                            }
+                        }
+
+
+                        menu_detail.vueObj.fit = data.peopleTypeName;
+                        menu_detail.vueObj.nutritions = chnNutritions;
+                        menu_detail.vueObj.collection = data.collection;
+                        for (var i = 0; i < stepList.length; i++) {
+                            var obj = stepList[i];
+                            obj.picUrl = !obj.picUrl ? '#' : 'http://ce-cdn.midea.com/ccs/cookbook/' + obj.picUrl + stepsPicParams;
+                        }
+                        menu_detail.vueObj.stepDisciptions = stepList;
+                        /******************微信分享，menu_detail.vueObj.title为标题，menu_detail.vueObj.intro为详情介绍***********************/
+                        /*commJs.setWxShare('美勺-'+menu_detail.vueObj.title,menu_detail.vueObj.intro);*/
+                        commJs.setWxShare('美勺食谱-' + menu_detail.vueObj.title, '美的营养与烹饪研究实验室精心研制', menu_detail.vueObj.pic, false, 'ofc');
+
+                        /****数据埋点****/
+                        MtaH5.clickStat('browse', { 'browse': menu_detail.vueObj.title });
+                        if (commJs.getUrlParam('from') == 'default') {
+                            MtaH5.clickStat('default', { 'default': menu_detail.vueObj.title });
+                        } else {
+                            MtaH5.clickStat('control', { 'control': menu_detail.vueObj.title });
+                        }
+                    },
+                    error: function () { }
+                });
+            },
+            //美食汇2.0-菜谱收藏添加接口
+            postCollectionAdd: function () {
+                if (menu_detail.vueObj.collecting) {
+                    return;
+                }
+                menu_detail.vueObj.collecting = true;
+                if (commJs.platformSource == 'mSmart') {
+                    commJs.ajax({
+                        urlType: 0,
+                        type: 'PUT',
+                        url: '/menu/collection/add',
+                        data: {
+                            'platformSource': commJs.platformSource,
+                            'uid': commJs.userInfo.userId,
+                            'openId': commJs.userInfo.openId,
+                            'menuId': commJs.getUrlParam('menuId')
+                        },
+                        success: function (data) {
+                            ++menu_detail.vueObj.collectCounts;
+                            MtaH5.clickStat('collection', { 'collection': menu_detail.vueObj.title });
+                            menu_detail.vueObj.collection = true;
+                            menu_detail.vueObj.$set('collection', true);
+                            alert('食谱收藏成功');
+                            menu_detail.vueObj.collecting = false;
+                        },
+                        error: function (msg) {
+                            alert(msg);
+                            menu_detail.vueObj.collecting = false;
+                        }
+                    });
+                } else {
+                    commJs.ajax({
+                        urlType: 10,
+                        type: 'POST',
+                        url: '/v1/crm/reg/check',
+                        data: {
+                            openId: commJs.userInfo.openId,
+                            userId: commJs.userInfo.userId
+                        },
+                        success: function (data) {
+                            console.log(data);
+                            if (data.isReg != 0) {
+                                window.location.replace("https://passport.midea.com/v3/login_code?channelFrom=MEISHIHUI&system=meishao&openId=" + data.openId + "&redirect=" + encodeURIComponent(location.href));
+                            } else {
+                                commJs.ajax({
+                                    urlType: 0,
+                                    type: 'PUT',
+                                    url: '/menu/collection/add',
+                                    data: {
+                                        'platformSource': commJs.platformSource,
+                                        'uid': commJs.userInfo.userId,
+                                        'openId': commJs.userInfo.openId,
+                                        'menuId': commJs.getUrlParam('menuId')
+                                    },
+                                    success: function (data) {
+                                        ++menu_detail.vueObj.collectCounts;
+                                        MtaH5.clickStat('collection', { 'collection': menu_detail.vueObj.title });
+                                        menu_detail.vueObj.collection = true;
+                                        menu_detail.vueObj.$set('collection', true);
+                                        alert('食谱收藏成功<br>可在“个人中心-我的食谱”查看');
+                                        menu_detail.vueObj.collecting = false;
+                                    },
+                                    error: function (msg) {
+                                        alert(msg);
+                                        menu_detail.vueObj.collecting = false;
+                                    }
+                                });
+                            }
+                        },
+                        error: function (data) {
+
+                        }
+                    });
+                }
+            },
+            //美食汇2.0-菜谱收藏批量删除接口
+            postCollectionDelete: function () {
+                if (menu_detail.vueObj.collecting) {
+                    return;
+                }
+                menu_detail.vueObj.collecting = true;
+                if (commJs.platformSource == 'mSmart') {
+                    commJs.ajax({
+                        urlType: 0,
+                        type: 'PUT',
+                        url: '/menu/collection/delete',
+                        data: {
+                            'uid': commJs.userInfo.userId,
+                            'menuIdList': JSON.stringify([commJs.getUrlParam('menuId')])
+                        },
+                        success: function (data) {
+                            --menu_detail.vueObj.collectCounts;
+                            menu_detail.vueObj.collection = false;
+                            menu_detail.vueObj.$set('collection', false);
+                            alert('已取消收藏食谱');
+                            menu_detail.vueObj.collecting = false;
+                        },
+                        error: function () {
+                            menu_detail.vueObj.collecting = false;
+                        }
+                    });
+                } else {
+                    commJs.ajax({
+                        urlType: 10,
+                        type: 'POST',
+                        url: '/v1/crm/reg/check',
+                        data: {
+                            openId: commJs.userInfo.openId,
+                            userId: commJs.userInfo.userId
+                        },
+                        success: function (data) {
+                            if (data.isReg != 0) {
+                                window.location.replace("https://passport.midea.com/v3/login_code?channelFrom=MEISHIHUI&system=meishao&openId=" + data.openId + "&redirect=" + encodeURIComponent(location.href));
+                            } else {
+                                commJs.ajax({
+                                    urlType: 0,
+                                    type: 'PUT',
+                                    url: '/menu/collection/delete',
+                                    data: {
+                                        'uid': commJs.userInfo.userId,
+                                        'menuIdList': JSON.stringify([commJs.getUrlParam('menuId')])
+                                    },
+                                    success: function (data) {
+                                        --menu_detail.vueObj.collectCounts;
+                                        menu_detail.vueObj.collection = false;
+                                        menu_detail.vueObj.$set('collection', false);
+                                        alert('已取消收藏食谱');
+                                        menu_detail.vueObj.collecting = false;
+                                    },
+                                    error: function () {
+                                        menu_detail.vueObj.collecting = false;
+                                    }
+                                });
+                            }
+                        },
+                        error: function (data) {
+
+                        }
+                    });
+                }
+            },
+            //美食菜谱上面点击烹饪的接口
+            postStartWork: function (deviceId) {
+                var d = document.getElementById('__cimi_dialog_mask');
+                d.onclick = function () {
+                    history.go(-1);
+                }
+                commJs.ajax({
+                    urlType: 3,
+                    type: 'POST',
+                    url: '/menu/startWork',
+                    data: {
+                        'userId': commJs.userInfo.userId,
+                        menuId: commJs.getUrlParam('menuId'),
+                        virtualId: deviceId,
+                        time: 0,
+                        'currentTime': Date.parse(new Date())
+                    },
+                    success: function (data) {
+                        if ((commJs.getUrlParam('flag') == commJs.environment.mSmartControl)) {
+                            window.history.go(0 - (window.history.length - 1));
+                        } else {
+                            if ((commJs.getUrlParam('flag') == commJs.environment.mSmartMain)) {
+                                alert('指令发送成功,设备已经开始工作');
+                                commJs.Dialog.close();
+                            } else {
+                                //menu_detail.deviceEnter(deviceId);
+                                window.history.go(-1);
+                            }
+                        }
+                    },
+                    error: function (data) {
+                        if (data.errorCode == 2) {
+                            //设备已经在工作中，提醒用户取消工作
+                            commJs.Dialog.show('j_pop_dialog', diaglog.show);
+                            menu_detail.vueObj.workingDevice = deviceId;
+                        } else if (data.errorCode == 1) {
+                            alert('设备启动失败');
+                            commJs.Dialog.close();
+                        } else if (data.errorCode == 3) {
+                            alert('设备关机，请手动启动设备');
+                            commJs.Dialog.close();
+                        } else if (data.errorCode == 9903) {
+                            commJs.Dialog.close();
+                            alert('无法连接设备，请手动启动设备');
+                            setTimeout(() => {
+                                window.history.go(-1);
+                            }, 3000);
+                        }
+                    }
+                });
+            },
+            //美食汇2.0-设备取消工作接口
+            postCancelWork: function (virtualId, optionalVirtualId) {
+                console.log(virtualId, optionalVirtualId, menu_detail.vueObj.workingDevice);
+                commJs.ajax({
+                    urlType: 3,
+                    type: 'POST',
+                    url: '/menu/cancelWork',
+                    data: {
+                        'userId': commJs.userInfo.userId,
+                        virtualId: virtualId || optionalVirtualId || menu_detail.vueObj.workingDevice,
+                        'currentTime': Date.parse(new Date())
+                    },
+                    success: function (data) {
+                        alert('指令发送成功');
+                    },
+                    error: function (data) {
+                        alert('指令发送失败');
+                    }
+                });
+            },
+            //过滤设备型号
+            fliter: function (deviceList) {
+                var attr;
+                var deviceListArray = [];
+                console.log(deviceList);
+                for (attr in deviceList) {
+                    if (commJs.userInfo.deviceType) {
+                        if (deviceList[attr].type != ('0x' + commJs.userInfo.deviceType) || deviceList[attr].onlineStatus == 'false') {
+                            //delete deviceList[attr];
+                        } else {
+                            deviceListArray.push(deviceList[attr]);
+                        }
+                    } else {
+                        if (deviceList[attr].onlineStatus == 'true' || deviceList[attr].onlineStatus == true) {
+                            console.log(commJs.deviceListFromMenuId, deviceList[attr].devSN.substring(9, 17));
+                            if (commJs.arrayInclude(commJs.deviceListFromMenuId, deviceList[attr].devSN.substring(9, 17))) {
+                                deviceListArray.push(deviceList[attr]);
+                            }
+                        }
+                    }
+                }
+                console.log('deviceListArray:' + deviceListArray)
+                return deviceListArray;
+            },
+            //发送设备按钮事件
+            sendDeviceAction: function () {
+                // alert(JSON.parse(sessionStorage.getItem("cookbook-userInfo")).deviceType);
+                // alert(commJs.userInfo.deviceId)
+                // if(menu_detail.vueObj.historyLen == 1){
+                //     commJs.Dialog.show('showShareTips', diaglog.show);
+                //     return;
+                // }
+                MtaH5.clickStat("cook");
+                //如果是从设备端进入美食汇则直接启动
+                if (commJs.userInfo.deviceId && commJs.userInfo.deviceId != 'null') {
+                    menu_detail.selectDevice(commJs.userInfo.deviceId);
+                    return;
+                }
+                //该标记说明是从美居进入美食汇
+                if ((commJs.getUrlParam('flag') == commJs.environment.mSmartMain || commJs.getUrlParam('flag') == commJs.environment.mSmartControl)) {
+                    var deviceList;
+                    mdSmartios.bridge.getUserApplianceList(function (deviceListData) {
+                        deviceList = deviceListData;
+                        if (commJs.getUrlParam('flag') == commJs.environment.mSmartMain) {
+                            var data = menu_detail.fliter(deviceList);
+                            console.log(data);
+                            if (data.length == 0) {
+                                alert('亲，没有适用的家电');
+                            } else if (data.length == 1) {
+                                menu_detail.selectDevice(data[0].applianceId);
+                            } else {
+                                var vueObj = new Vue({
+                                    el: '#j_pop_sel_device',
+                                    data: {
+                                        flag: (commJs.getUrlParam('flag') == commJs.environment.mSmartMain || commJs.getUrlParam('flag') == commJs.environment.mSmartControl) ? 0 : 1,
+                                        items: []
+                                    },
+                                    watch: {
+                                        'items': function () {
+                                            //设备选中点击事件
+                                            var list = document.getElementById('j_device_list').getElementsByTagName('li');
+                                            for (var i = 0; i < list.length; i++) {
+                                                var obj = list[i];
+                                                document.addEvent(obj, 'click', function () {
+                                                    menu_detail.vueObj.deviceSelected = this.dataset.index;
+                                                    for (var j = 0; j < list.length; j++) {
+                                                        var obj = list[j];
+                                                        obj.setAttribute('class', '');
+                                                    }
+                                                    this.setAttribute('class', 'selected');
+                                                });
+                                            }
+                                        }
+                                    }
+                                });
+                                vueObj.items = data;
+                                menu_detail.vueObj.deviceList = data;
+                                commJs.Dialog.show('j_pop_sel_device', diaglog.show);
+                            }
+                        } else if (commJs.getUrlParam('flag') == commJs.environment.mSmartControl) {
+                            var data = deviceList;
+                            var deviceId = commJs.getUrlParam('deviceId')
+                            var deviceType = '0x' + JSON.parse(sessionStorage.getItem("cookbook-userInfo")).deviceType;
+                            console.log(deviceList);
+                            var i = 0;
+                            // for(i in deviceList){
+                            //     if (deviceList[i].type == deviceType) {
+                            //         deviceId = deviceList[i].applianceId;
+                            //     }
+                            // }
+
+                            // for(var i = 0; i < deviceList.length; i++){
+                            //     if(deviceList['Appliance' + i].type == deviceType) {
+                            //         deviceId = deviceList['Appliance' + i].applianceId;
+                            //     }
+                            // }
+                            console.log(deviceId);
+                            menu_detail.selectDevice(deviceId);
+                        }
+                        // alert("error list:" + JSON.stringify(deviceList));
+
+                        // alert("error data:" + data.length);
+
+                    });
+                } else {
+                    menu_detail.getDeviceList();
+                }
+
+            },
+            //美食汇2.0-获取用户设备列表接口
+            getDeviceList: function () {
+                var vueObj = new Vue({
+                    el: '#j_pop_sel_device',
+                    data: {
+                        flag: (commJs.getUrlParam('flag') == commJs.environment.mSmartMain || commJs.getUrlParam('flag') == commJs.environment.mSmartControl) ? 0 : 1,
+                        items: []
+                    },
+                    watch: {
+                        'items': function () {
+                            //设备选中点击事件
+                            var list = document.getElementById('j_device_list').getElementsByTagName('li');
+                            for (var i = 0; i < list.length; i++) {
+                                var obj = list[i];
+                                document.addEvent(obj, 'click', function () {
+                                    menu_detail.vueObj.deviceSelected = this.dataset.index;
+                                    console.log('menu_detail.vueObj.deviceSelected:' + menu_detail.vueObj.deviceSelected);
+                                    for (var j = 0; j < list.length; j++) {
+                                        var obj = list[j];
+                                        obj.setAttribute('class', '');
+                                    }
+                                    this.setAttribute('class', 'selected');
+                                });
+                            }
+                        }
+                    }
+                });
+                commJs.ajax({
+                    urlType: 3,
+                    type: 'GET',
+                    url: '/menu/getDeviceList/' + commJs.getUrlParam('menuId') + '/' + commJs.userInfo.userId + '/' + commJs.userInfo.openId,
+                    data: {},
+                    success: function (data) {
+                        data = data.result;
+                        vueObj.items = data;
+                        menu_detail.vueObj.deviceList = data;
+                        //判断url里是否有deviceId和modelNo，如果有，就直接发送到对接的device，不需要再理家电列表。
+                        if (commJs.userInfo.deviceId && commJs.userInfo.modelNo) {
+                            menu_detail.selectDevice(data[0].virtualId);
+                            return;
+                        }
+                        if (data.length == 0) {
+                            alert('亲，没有适用的家电');
+                            menu_detail.vueObj.hideCook = true;
+                        } else if (data.length == 1) {
+                            menu_detail.selectDevice(data[0].virtualId);
+                        } else {
+                            commJs.Dialog.show('j_pop_sel_device', diaglog.show);
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            },
+            //判定
+            judgeWetherPossessDeviceList: function () {
+                commJs.ajax({
+                    urlType: 3,
+                    type: 'GET',
+                    url: '/menu/getDeviceList/' + commJs.getUrlParam('menuId') + '/' + commJs.userInfo.userId + '/' + commJs.userInfo.openId,
+                    data: {},
+                    success: function (data) {
+                        if (data.length == 0) {
+                            menu_detail.vueObj.hideCook = true;
+                            //                        document.getElementById('g-btn').getElementsByName('collection').style.width='640px';
+                            //                        document.getElementById('g-btn').getElementsByName('startWork').style.width='0';
+                            //                            for (var i = 0; i < a.length; i++) {
+                            //                                a[i].style.width = '640px';
+                            //                            }
+                            //                            a[a.length-1].style.display='none';
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            },
+            //选择设备
+            selectDevice: function (deviceId) {
+                commJs.Dialog.show('J_loading', diaglog.show);
+                menu_detail.postStartWork(deviceId);
+            },
+            //展示完整食材列表
+            openNutritionsList: function () {
+                var elm = document.getElementsByClassName('m-material')[0].getElementsByTagName('ul')[1];
+                if (elm.style.height == 'auto') {
+                    elm.style.height = 505 + 'px';
+                    document.getElementsByClassName('btn-more')[0].innerHTML = '查看完整营养食谱';
+                } else {
+                    elm.style.height = 'auto';
+                    document.getElementsByClassName('btn-more')[0].innerHTML = '收起营养食谱';
+                }
+            },
+            //食材加入购物清单
+            addToCart: function () {
+                store.set('menuIngrediens', menu_detail.vueObj.menuIngrediens);
+                commJs.jumpUrl('http://living.midea.com/ccs/cookbook/3.6.11/' + 'shopping_list.html');
+            },
+            //家电跳转接口
+            deviceEnter: function () {
+                MtaH5.clickStat('Cook', { 'cook': menu_detail.vueObj.title });
+                var deviceId = menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].virtualId ? menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].virtualId : commJs.userInfo.deviceId;
+                var modelNo = menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].modelNo ? menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].modelNo : commJs.userInfo.modelNo;
+                var deviceType = menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].applianceType ? menu_detail.vueObj.deviceList[menu_detail.vueObj.deviceSelected].applianceType : commJs.userInfo.deviceType;
+
+                var cloudMenusHostname = location.hostname;
+                if (cloudMenusHostname == 'cemdot.midea.com') {
+                    cloudMenusHostname = 'living.midea.com'; //‘美食汇’的正式环境在 ce3
+                }
+                window.location = 'http://' + cloudMenusHostname + '/v1/v2/device/enter?' +
+                    'deviceType=' + deviceType +
+                    '&' + 'modelNo=' + modelNo +
+                    '&' + 'deviceId=' + deviceId +
+                    '&' + 'userId=' + commJs.userInfo.userId +
+                    '&' + 'openId=' + commJs.userInfo.openId +
+                    '&' + 'now=' + Date.parse(new Date());
+            },
+
+            payAttention: function (flag) {
+                if (!window.localStorage.getItem('tag')) window.localStorage.setItem('tag', true);
+                if (flag == 'attention') {
+                    commJs.Dialog.show('S_loading', diaglog.attention);
+                } else if (flag == 'close') {
+                    document.getElementById('fixTop').style.display = 'none';
+                } else {
+                    document.getElementById('fixTop').style.display = 'none';
+                    commJs.Dialog.close();
+                }
+
+            },
+            //加载评论数据
+            getComments: function (index) {
+                commJs.ajax({
+                    urlType: 7,
+                    type: 'GET',
+                    url: '/operative-userManager/comment/findAllPageByRelationId',
+                    data: {
+                        pageNum: index,
+                        pageSize: 10,
+                        relationId: commJs.getUrlParam('menuId'),
+                        contentType: 1
+                    },
+                    success: function (data) {
+                        // 今天
+                        var now = new Date();
+                        now = Date.parse(now);
+                        var today = new Date();
+                        today.setHours(0);
+                        today.setMinutes(0);
+                        today.setSeconds(0);
+                        today.setMilliseconds(0);
+                        today = Date.parse(today);
+                        var oneday = 1000 * 60 * 60 * 24;
+                        var yesterday = new Date(today - oneday);
+                        yesterday = Date.parse(yesterday);
+                        var item = data.data;
+                        for (var i in item) {
+                            var time = item[i].comment.contentCreatTime;
+                            if (time > today) {
+                                var hour = now - time;
+                                if (hour < 3600000) {
+                                    var minute = parseInt(hour / 60000);
+                                    item[i].comment.contentCreatTime = minute + '分钟前'
+                                } else {
+                                    hour = parseInt(hour / 3600000);
+                                    item[i].comment.contentCreatTime = hour + '小时前'
+                                }
+                            } else if (time > yesterday) item[i].comment.contentCreatTime = '昨天';
+                            else {
+                                var timestamp = time;
+                                var newDate = new Date();
+                                //                           newDate.setTime(timestamp * 1000);
+                                newDate.setTime(timestamp);
+                                item[i].comment.contentCreatTime = newDate.toLocaleDateString();
+                            }
+
+                            if (item[i].replyCommentList.length > 0) {
+                                for (var j in item[i].replyCommentList) {
+                                    time = item[i].replyCommentList[j].contentCreatTime;
+
+                                    if (time > today) {
+                                        var hour = now - time;
+                                        if (hour < 3600000) {
+                                            var minute = parseInt(hour / 60000);
+                                            item[i].replyCommentList[j].contentCreatTime = minute + '分钟前'
+                                        } else {
+                                            hour = parseInt(hour / 3600000);
+                                            item[i].replyCommentList[j].contentCreatTime = hour + '小时前'
+                                        }
+                                    } else if (time > yesterday) item[i].replyCommentList[j].contentCreatTime = '昨天';
+                                    else {
+
+
+                                        var timestamp = time;
+                                        var newDate = new Date();
+                                        //                           newDate.setTime(timestamp * 1000);
+                                        newDate.setTime(timestamp);
+                                        item[i].replyCommentList[j].contentCreatTime = newDate.toLocaleDateString();
+                                    }
+                                }
+                            }
+                            console.log("--------" + JSON.stringify(item[i]));
+                            menu_detail.vueObj.comments.push(item[i]);
+
+                            console.log("--------" + JSON.stringify(menu_detail.vueObj.comments));
+                        }
+                        menu_detail.vueObj.totalcomment = data.totalCount;
+                        menu_detail.vueObj.pageNo = data.pageNo;
+                        menu_detail.vueObj.totalPageCount = data.totalPageCount
+                    },
+                    error: function () {
+
+                    }
+                });
+            },
+            //营养视图详情查看
+            nutritionalView: function () {
+                var nutritionList = menu_detail.vueObj.nutritions;
+                if (!store.get('nutritionLIst')) {
+                    store.set('nutritionList', nutritionList)
+                }
+                commJs.jumpUrl('http://living.midea.com/ccs/cookbook/3.6.11/' + 'nutritionalView.html?AT=' + commJs.getUrlParam('AT'));
+            }
+        };
+        menu_detail.init();
+    </script>
+
+    <!-- <script src="js/eruda.min.js?v=c67a131"></script>
+    <script>eruda.init();</script> -->
+
+
+</body></html>

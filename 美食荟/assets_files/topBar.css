@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*坑爹的美居*/
+#meiJu_topBar {
+  background-color: black;
+  opacity: 0.9;
+  height: 55px;
+  width: 100%;
+  font-size: 25px;
+  padding-top: 15px;
+  display: none; }
+
+#meiJu_topBar .title {
+  color: white;
+  text-align: center; }
+
+#meiJu_topBar a p {
+  position: absolute;
+  z-index: 10;
+  padding-left: 10px;
+  float: left;
+  color: white;
+  width: 20%; }
