@@ -1239,7 +1239,7 @@ mip-ad[type=ad-baidu] {
     list-style-type: none
 }
 
-.flex {
+.mflex {
     display: -webkit-box;
     display: -moz-box;
     display: -webkit-flexbox;

@@ -110,7 +110,7 @@
             </v-card>
           </v-flex>
 
-          <v-flex xs12 md6 my-2 mx-1>
+          <v-flex xs2 my-2 mx-1>
             <v-chip>
               <v-avatar>
                 <v-icon>mdi-clock-outline</v-icon>
@@ -120,7 +120,7 @@
           </v-flex>
 
 
-          <v-flex xs12 md6 my-2 mx-1>
+          <v-flex xs2 md6 my-2 mx-1>
             <v-chip>
               <v-avatar>
                 <v-icon>mdi-pot</v-icon>
@@ -129,7 +129,7 @@
             </v-chip>
           </v-flex>
 
-          <v-flex xs12 md6 my-2 mx-1>
+          <v-flex xs2 md6 my-2 mx-1>
             <v-chip>
               <v-avatar>
                 <v-icon>mdi-carrot</v-icon>
@@ -152,7 +152,7 @@
             <v-pagination v-model="pagination.page" :length="pages"></v-pagination>
           </div>
 
-          <v-flex xs12 md6 my-2 mx-1>
+          <v-flex xs2 md6 my-2 mx-1>
             <v-chip>
               <v-avatar>
                 <v-icon>mdi-fire</v-icon>
@@ -164,10 +164,10 @@
 
           <v-card>
             <v-container fluid grid-list-lg>
-              <v-layout align-center justify-center column fill-width fill-height />
+              <v-layout column warp />
               <v-flex xs12>
                 <v-card>
-                  <v-img src="./assets_files/1.jpg" :width='widthControl'>
+                  <v-img src="./assets_files/1.jpg">
                   </v-img>
                   <v-card-title primary-title>
                     <div>
@@ -181,7 +181,7 @@
 
               <v-flex xs12>
                 <v-card>
-                  <v-img src="./assets_files/2.jpg" :width='widthControl'>
+                  <v-img src="./assets_files/2.jpg">
                   </v-img>
                   <v-card-title primary-title>
                     <div>
@@ -193,7 +193,7 @@
 
               <v-flex xs12>
                 <v-card>
-                  <v-img src="./assets_files/3.jpg" :width='widthControl'>
+                  <v-img src="./assets_files/3.jpg">
                   </v-img>
                   <v-card-title primary-title>
                     <div>
@@ -205,7 +205,7 @@
 
               <v-flex xs12>
                 <v-card>
-                  <v-img src="./assets_files/4.jpg" :width='widthControl'>
+                  <v-img src="./assets_files/4.jpg">
                   </v-img>
                   <v-card-title primary-title>
                     <div>
@@ -226,21 +226,23 @@
 
 
 
-          <v-flex xs12 md6 my-2 mx-1>
-            <v-chip>
-              <v-avatar>
-                <v-icon>mdi-comment-text-multiple-outline</v-icon>
-              </v-avatar>
-              用户评论
-            </v-chip>
-            <v-spacer></v-spacer>
+          <v-flex my-2 mx-1>
+            <v-layout row>
+              <v-chip>
+                <v-avatar>
+                  <v-icon>mdi-comment-text-multiple-outline</v-icon>
+                </v-avatar>
+                用户评论
+              </v-chip>
+              <v-spacer></v-spacer>
 
-            <v-btn flat color="primary">
-              <v-icon>mdi-account-edit</v-icon>
-              我要留言
-            </v-btn>
-
+              <v-btn flat color="primary">
+                <v-icon>mdi-account-edit</v-icon>
+                我要留言
+              </v-btn>
+            </v-layout>
           </v-flex>
+
           <v-layout column justify-center>
 
 
@@ -287,8 +289,8 @@
 
 
           <v-footer class="fixed-header" fixed height="55">
-            <a href="http://iot4.midea.com.cn/downloads/app/index.html?pgfrom=wxcd3" class="flex">
-              <div class="flex flex-1">
+            <a href="http://iot4.midea.com.cn/downloads/app/index.html?pgfrom=wxcd3" class="mflex">
+              <div class="mflex flex-1">
                 <div><img class="app-logo" src="new_assets/美居app.JPG"></div>
                 <div class="flex-1">
                   <div class="app-text">美居·美好生活 智慧家居</div>
@@ -296,8 +298,10 @@
                   </div>
                 </div>
               </div>
-              <div class="app-btn">点击下载</div>
+
             </a>
+            <v-spacer></v-spacer>
+            <div class="app-btn">点击下载</div>
           </v-footer>
 
 
