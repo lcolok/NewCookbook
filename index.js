@@ -3,8 +3,10 @@
 var app = new Vue({
     el: '#site-body',
     data: {
-        show:false,
+        widthControl:'350',
+        show: false,
         pagination: {},
+        panel:[true,true,true,true,true,true],
         headers: [
             {
                 text: '材料名称',
@@ -92,6 +94,42 @@ var app = new Vue({
                 detail: '200毫升'
             },
         ]
+        , messages: [
+            {
+                avatar: './assets_files/132',
+                title: 'linuxer程🏀',
+                comment: '这道菜应该不适合孕妇'
+            },
+            {
+                avatar: './assets_files/132',
+                title: 'linuxer程🏀',
+                comment: '这道菜不适合孕妇，太辣了'
+            },
+            {
+                avatar: './assets_files/132(1)',
+                title: '周宗旭 Benny',
+                comment: '挺好吃，确实方便，比较便捷'
+            },
+            {
+                avatar: './assets_files/132(2)',
+                title: '杨应彬 Ben Yang',
+                comment: '觉得在外面吃亏大了，看起来很简单啊'
+            },
+            {
+                avatar: './assets_files/132(3)',
+                title: '孟德龙',
+                comment: '心服口服~~诶,不说了,跨界当道,我也去厨房写诗了(๑‾ ꇴ ‾๑)'
+            },
+            {
+                avatar: './assets_files/0',
+                title: '🚬Dan',
+                comment: '这鱼要先用别的锅炸一下吗？'
+            },
+        ],
+
+
+
+
     },
     computed: {
         pages() {
@@ -108,5 +146,4 @@ var app = new Vue({
 })
 
 
-
-app.$vuetify.theme.primary = '#2c76fb'
+app.$vuetify.theme.primary = '#2c76fb';
